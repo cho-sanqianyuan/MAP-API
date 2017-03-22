@@ -9,14 +9,12 @@
         第三步，获取Key。
 
 ## 构建地图<br/>
+	 var map = new AMap.Map('container',{
+            resizeEnable: true,
+            zoom: 10,
+            center: [116.480983, 40.0958]
+        });
 
-	var map = new AMap.Map('container', {
-                resizeEnable: true,
-                zoom:11,
-                center: [116.397428, 39.90923]
-         });
-	 
-<br/>
 ## 加载定位插件（由ip定位当前城市）<br/>
 
         map.plugin('AMap.CitySearch', function() {showCityInfo()}); //加载由ip搜索地区的插件
