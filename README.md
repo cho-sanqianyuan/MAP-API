@@ -4,19 +4,19 @@
 
 *注册成为高德开发者需要分三步：<br/>
 
-        第一步，注册高德开发者；<br/>
-        第二步，去控制台创建应用；<br/>
-        第三步，获取Key。<br/>
+        第一步，注册高德开发者；
+        第二步，去控制台创建应用；
+        第三步，获取Key。
 
 ##构建地图<br/>
 
-        var map = new AMap.Map('container', {
+	var map = new AMap.Map('container', {
                 resizeEnable: true,
-                zoom:11,设置地图范围大小
-                center: [116.397428, 39.90923]可以不设置经纬度以自动定位到当前地点
+                zoom:11,
+                center: [116.397428, 39.90923]
          });
          
-##加载定位插件（由ip定位当前城市）
+##加载定位插件（由ip定位当前城市）<br/>
 
         map.plugin('AMap.CitySearch', function() {showCityInfo()}); //加载由ip搜索地区的插件
 	        //获取用户所在城市信息
