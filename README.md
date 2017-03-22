@@ -8,15 +8,16 @@
         第二步，去控制台创建应用；
         第三步，获取Key。
 
-##构建地图<br/>
+## 构建地图<br/>
 
 	var map = new AMap.Map('container', {
                 resizeEnable: true,
                 zoom:11,
                 center: [116.397428, 39.90923]
          });
-         
-##加载定位插件（由ip定位当前城市）<br/>
+	 
+<br/>
+## 加载定位插件（由ip定位当前城市）<br/>
 
         map.plugin('AMap.CitySearch', function() {showCityInfo()}); //加载由ip搜索地区的插件
 	        //获取用户所在城市信息
